@@ -17,4 +17,10 @@ module.exports = {
   serverModuleFormat: "cjs",
   dev: { port: process.env.HMR_SERVER_PORT || 8002 },
   future: {},
+  // Add Vercel-specific configuration
+  serverBuildPath: "build/server/index.js",
+  serverDependenciesToBundle: [
+    "@shopify/shopify-app-remix",
+    "@shopify/shopify-app-session-storage-prisma"
+  ]
 };

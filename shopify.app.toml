@@ -2,7 +2,7 @@
 
 client_id = "8c7adca45f340b99cf1c3781191991b8"
 name = "product-configurator"
-application_url = "http://localhost:3000"
+application_url = "https://product-config-n8aso1m1i-alhadafs-projects-e7574e40.vercel.app"
 embedded = true
 
 [build]
@@ -29,4 +29,4 @@ api_version = "2025-10"
 scopes = "read_products,write_products,read_files,write_files,read_metaobjects,write_metaobjects,read_metaobject_definitions,write_metaobject_definitions,read_orders,write_orders,read_order_edits,write_order_edits,read_customers"
 
 [auth]
-redirect_urls = [ "http://localhost:3000/auth/callback" ]
+redirect_urls = [ "https://product-config-n8aso1m1i-alhadafs-projects-e7574e40.vercel.app/auth/callback" ]
