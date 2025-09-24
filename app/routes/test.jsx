@@ -5,7 +5,7 @@ export const loader = async () => {
     message: "Test endpoint is working!",
     timestamp: new Date().toISOString(),
     status: "success",
-    version: "1.0.1" // Updated version
+    version: "1.0.2" // Updated version again
   });
 };
 
@@ -14,7 +14,7 @@ export default function TestRoute() {
     <div>
       <h1>Test Endpoint</h1>
       <p>This is a test endpoint to verify the deployment is working.</p>
-      <p>Version: 1.0.1</p>
+      <p>Version: 1.0.2</p>
     </div>
   );
 }
