@@ -7,19 +7,16 @@ import {
 import { PrismaSessionStorage } from "@shopify/shopify-app-session-storage-prisma";
 import prisma from "./db.server";
 
-// For Vercel deployments, we need to handle the app URL differently
-// If SHOPIFY_APP_URL is not set, we'll use a placeholder and let Vercel handle it
-const appUrl = process.env.SHOPIFY_APP_URL || "https://product-config-ricpymi53-alhadafs-projects-e7574e40.vercel.app";
-
+// For Vercel deployments, we use SingleMerchant distribution which doesn't require a fixed app URL
 const shopify = shopifyApp({
   apiKey: process.env.SHOPIFY_API_KEY,
   apiSecretKey: process.env.SHOPIFY_API_SECRET || "",
   apiVersion: ApiVersion.January25,
   scopes: process.env.SCOPES?.split(","),
-  appUrl: appUrl,
+  appUrl: process.env.SHOPIFY_APP_URL || "",
   authPathPrefix: "/auth",
   sessionStorage: new PrismaSessionStorage(prisma),
-  distribution: AppDistribution.AppStore,
+  distribution: AppDistribution.SingleMerchant,
   future: {
     unstable_newEmbeddedAuthStrategy: true,
     removeRest: true,

@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/remix",
+      "src": "build/server/index.js",
+      "use": "@vercel/node",
       "config": {
         "includeFiles": [
           "build/**",
@@ -25,23 +25,23 @@
     },
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "/build/server/index.js"
     },
     {
       "src": "/auth/(.*)",
-      "dest": "/auth/$1"
+      "dest": "/build/server/index.js"
     },
     {
       "src": "/webhooks/(.*)",
-      "dest": "/webhooks/$1"
+      "dest": "/build/server/index.js"
     },
     {
       "src": "/apps/(.*)",
-      "dest": "/apps/$1"
+      "dest": "/build/server/index.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.js"
+      "dest": "/build/server/index.js"
     }
   ],
   "env": {
