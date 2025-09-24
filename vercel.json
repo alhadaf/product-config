@@ -5,24 +5,3 @@
     "NODE_ENV": "production"
   }
 }
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "build/**",
-          "public/**"
-        ]
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "^/(.*)$",
-      "dest": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js"
-    }
-  ]
-}
