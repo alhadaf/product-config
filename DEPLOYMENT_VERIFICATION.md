@@ -1,4 +1,10 @@
-# Deployment Verification Guide
+# Deployment Verification
+
+This file is used to trigger a new deployment to Vercel.
+
+Last deployment attempt: 2025-09-24
+
+Status: In Progress
 
 ## Current Deployment Status
 Your Shopify app has been deployed to Vercel at:
