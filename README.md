@@ -100,6 +100,29 @@ Please read the [documentation for @shopify/shopify-app-remix](https://www.npmjs
 
 ## Deployment
 
+### Vercel Deployment
+
+This app is configured to deploy to Vercel. The deployment has been set up at:
+https://product-config-ricpymi53-alhadafs-projects-e7574e40.vercel.app/
+
+To verify the deployment is working correctly:
+
+1. Visit the deployment URL in your browser
+2. Test the API endpoints:
+   - Product Details: `/api/products/details?productId=gid://shopify/Product/HANDLE-product-handle`
+   - Product Variants: `/api/products/variants?productId=gid://shopify/Product/HANDLE-product-handle`
+   - Customer Designs: `/api/customer-designs`
+
+### Shopify App Configuration
+
+After verifying the deployment works:
+
+1. Go to your Shopify Partner Dashboard
+2. Select your app
+3. Update the "App URL" to: `https://product-config-ricpymi53-alhadafs-projects-e7574e40.vercel.app`
+4. Update the "Whitelisted redirection URL(s)" to include:
+   - `https://product-config-ricpymi53-alhadafs-projects-e7574e40.vercel.app/auth/callback`
+
 ### Application Storage
 
 This template uses [Prisma](https://www.prisma.io/) to store session data, by default using an [SQLite](https://www.sqlite.org/index.html) database.

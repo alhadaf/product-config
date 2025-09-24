@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .test-button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .test-button:hover { background: #0056b3; }
+        .result { margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 5px; }
+        .success { border-left: 4px solid #28a745; }
+        .error { border-left: 4px solid #dc3545; }
+    </style>
+</head>
+<body>
+    <h1>API Test Page</h1>
+    <p>Use this page to test if your API endpoints are working correctly.</p>
+    
+    <div class="test-section">
+        <h2>Test Product Details Endpoint</h2>
+        <input type="text" id="productId" placeholder="Enter product ID or handle" value="HANDLE-classic-cotton-t-shirt" style="width: 300px; padding: 8px;">
+        <button class="test-button" onclick="testProductDetails()">Test Product Details</button>
+        <div id="productDetailsResult" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Product Variants Endpoint</h2>
+        <input type="text" id="variantsProductId" placeholder="Enter product ID or handle" value="HANDLE-classic-cotton-t-shirt" style="width: 300px; padding: 8px;">
+        <button class="test-button" onclick="testProductVariants()">Test Product Variants</button>
+        <div id="productVariantsResult" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Customer Designs Endpoint</h2>
+        <button class="test-button" onclick="testCustomerDesigns()">Test Customer Designs</button>
+        <div id="customerDesignsResult" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        function showResult(elementId, success, message, data = null) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.className = 'result ' + (success ? 'success' : 'error');
+            element.innerHTML = '<strong>' + (success ? 'Success' : 'Error') + ':</strong> ' + message;
+            if (data) {
+                element.innerHTML += '<pre style="margin-top: 10px; white-space: pre-wrap;">' + JSON.stringify(data, null, 2) + '</pre>';
+            }
+        }
+
+        async function testProductDetails() {
+            const productId = document.getElementById('productId').value;
+            if (!productId) {
+                alert('Please enter a product ID or handle');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/products/details?productId=${encodeURIComponent(productId)}`);
+                const data = await response.json();
+                showResult('productDetailsResult', response.ok, `Status: ${response.status}`, data);
+            } catch (error) {
+                showResult('productDetailsResult', false, `Error: ${error.message}`);
+            }
+        }
+
+        async function testProductVariants() {
+            const productId = document.getElementById('variantsProductId').value;
+            if (!productId) {
+                alert('Please enter a product ID or handle');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/products/variants?productId=${encodeURIComponent(productId)}`);
+                const data = await response.json();
+                showResult('productVariantsResult', response.ok, `Status: ${response.status}`, data);
+            } catch (error) {
+                showResult('productVariantsResult', false, `Error: ${error.message}`);
+            }
+        }
+
+        async function testCustomerDesigns() {
+            try {
+                const response = await fetch('/api/customer-designs');
+                const data = await response.json();
+                showResult('customerDesignsResult', response.ok, `Status: ${response.status}`, data);
+            } catch (error) {
+                showResult('customerDesignsResult', false, `Error: ${error.message}`);
+            }
+        }
+    </script>
+</body>
+</html>
