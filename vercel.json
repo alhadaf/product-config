@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "build/server/index.js",
-      "use": "@vercel/node",
+      "src": "package.json",
+      "use": "@vercel/remix",
       "config": {
         "includeFiles": [
           "build/**",
-          ".prisma/**",
+          "public/**",
           "prisma/**",
-          "public/**"
+          ".prisma/**"
         ]
       }
     }
@@ -25,23 +25,23 @@
     },
     {
       "src": "/api/(.*)",
-      "dest": "/build/server/index.js"
+      "dest": "/api/$1"
     },
     {
       "src": "/auth/(.*)",
-      "dest": "/build/server/index.js"
+      "dest": "/auth/$1"
     },
     {
       "src": "/webhooks/(.*)",
-      "dest": "/build/server/index.js"
+      "dest": "/webhooks/$1"
     },
     {
       "src": "/apps/(.*)",
-      "dest": "/build/server/index.js"
+      "dest": "/apps/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/build/server/index.js"
+      "dest": "/index.js"
     }
   ],
   "env": {

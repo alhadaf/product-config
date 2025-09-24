@@ -7,8 +7,9 @@ import {
 import { PrismaSessionStorage } from "@shopify/shopify-app-session-storage-prisma";
 import prisma from "./db.server";
 
-// Use a default URL if SHOPIFY_APP_URL is not set
-const appUrl = process.env.SHOPIFY_APP_URL || "http://localhost:3000";
+// For Vercel deployments, we need to handle the app URL differently
+// If SHOPIFY_APP_URL is not set, we'll use a placeholder and let Vercel handle it
+const appUrl = process.env.SHOPIFY_APP_URL || "https://product-config-ricpymi53-alhadafs-projects-e7574e40.vercel.app";
 
 const shopify = shopifyApp({
   apiKey: process.env.SHOPIFY_API_KEY,
