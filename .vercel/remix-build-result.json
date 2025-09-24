@@ -1,0 +1,697 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/webhooks.app.scopes_update": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.configuration": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.products.decorations": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/webhooks.app.uninstalled": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/webhooks.orders.create": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.products.variants": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.customer-designs": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.products.details": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.products.search": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.create": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.status": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.upload": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.files.complete": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.products.sizes": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.draft": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.files": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.products.list": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.designs.save": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.files.stage": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/apps.my-designs": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/apps.proof.$id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/designs._index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.fee-maps": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/designs.$id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth.login": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.env": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth.$": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.products._index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.orders._index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.products.$id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.products.new": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.import-demo": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.additional": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.orders.$id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.settings": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app._index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.setup": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/app.fees": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.jsx",
+        "config": {}
+      },
+      "routes/webhooks.app.scopes_update": {
+        "id": "routes/webhooks.app.scopes_update",
+        "parentId": "root",
+        "file": "app/routes/webhooks.app.scopes_update.jsx",
+        "path": "webhooks/app/scopes_update",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.configuration": {
+        "id": "routes/api.designs.configuration",
+        "parentId": "root",
+        "file": "app/routes/api.designs.configuration.jsx",
+        "path": "api/designs/configuration",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.products.decorations": {
+        "id": "routes/api.products.decorations",
+        "parentId": "root",
+        "file": "app/routes/api.products.decorations.jsx",
+        "path": "api/products/decorations",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/webhooks.app.uninstalled": {
+        "id": "routes/webhooks.app.uninstalled",
+        "parentId": "root",
+        "file": "app/routes/webhooks.app.uninstalled.jsx",
+        "path": "webhooks/app/uninstalled",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/webhooks.orders.create": {
+        "id": "routes/webhooks.orders.create",
+        "parentId": "root",
+        "file": "app/routes/webhooks.orders.create.jsx",
+        "path": "webhooks/orders/create",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.products.variants": {
+        "id": "routes/api.products.variants",
+        "parentId": "root",
+        "file": "app/routes/api.products.variants.jsx",
+        "path": "api/products/variants",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.customer-designs": {
+        "id": "routes/api.customer-designs",
+        "parentId": "root",
+        "file": "app/routes/api.customer-designs.jsx",
+        "path": "api/customer-designs",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.products.details": {
+        "id": "routes/api.products.details",
+        "parentId": "root",
+        "file": "app/routes/api.products.details.jsx",
+        "path": "api/products/details",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.products.search": {
+        "id": "routes/api.products.search",
+        "parentId": "root",
+        "file": "app/routes/api.products.search.jsx",
+        "path": "api/products/search",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.create": {
+        "id": "routes/api.designs.create",
+        "parentId": "root",
+        "file": "app/routes/api.designs.create.jsx",
+        "path": "api/designs/create",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.status": {
+        "id": "routes/api.designs.status",
+        "parentId": "root",
+        "file": "app/routes/api.designs.status.jsx",
+        "path": "api/designs/status",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.upload": {
+        "id": "routes/api.designs.upload",
+        "parentId": "root",
+        "file": "app/routes/api.designs.upload.jsx",
+        "path": "api/designs/upload",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.files.complete": {
+        "id": "routes/api.files.complete",
+        "parentId": "root",
+        "file": "app/routes/api.files.complete.jsx",
+        "path": "api/files/complete",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.products.sizes": {
+        "id": "routes/api.products.sizes",
+        "parentId": "root",
+        "file": "app/routes/api.products.sizes.jsx",
+        "path": "api/products/sizes",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.draft": {
+        "id": "routes/api.designs.draft",
+        "parentId": "root",
+        "file": "app/routes/api.designs.draft.jsx",
+        "path": "api/designs/draft",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.files": {
+        "id": "routes/api.designs.files",
+        "parentId": "root",
+        "file": "app/routes/api.designs.files.jsx",
+        "path": "api/designs/files",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.products.list": {
+        "id": "routes/api.products.list",
+        "parentId": "root",
+        "file": "app/routes/api.products.list.jsx",
+        "path": "api/products/list",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.designs.save": {
+        "id": "routes/api.designs.save",
+        "parentId": "root",
+        "file": "app/routes/api.designs.save.jsx",
+        "path": "api/designs/save",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.files.stage": {
+        "id": "routes/api.files.stage",
+        "parentId": "root",
+        "file": "app/routes/api.files.stage.jsx",
+        "path": "api/files/stage",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/apps.my-designs": {
+        "id": "routes/apps.my-designs",
+        "parentId": "root",
+        "file": "app/routes/apps.my-designs.jsx",
+        "path": "apps/my-designs",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/apps.proof.$id": {
+        "id": "routes/apps.proof.$id",
+        "parentId": "root",
+        "file": "app/routes/apps.proof.$id.jsx",
+        "path": "apps/proof/:id",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/designs._index": {
+        "id": "routes/designs._index",
+        "parentId": "root",
+        "file": "app/routes/designs._index.jsx",
+        "path": "designs",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.fee-maps": {
+        "id": "routes/api.fee-maps",
+        "parentId": "root",
+        "file": "app/routes/api.fee-maps.jsx",
+        "path": "api/fee-maps",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/designs.$id": {
+        "id": "routes/designs.$id",
+        "parentId": "root",
+        "file": "app/routes/designs.$id.jsx",
+        "path": "designs/:id",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth.login": {
+        "id": "routes/auth.login",
+        "parentId": "root",
+        "file": "app/routes/auth.login/route.jsx",
+        "path": "auth/login",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.env": {
+        "id": "routes/api.env",
+        "parentId": "root",
+        "file": "app/routes/api.env.jsx",
+        "path": "api/env",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth.$": {
+        "id": "routes/auth.$",
+        "parentId": "root",
+        "file": "app/routes/auth.$.jsx",
+        "path": "auth/*",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_index": {
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "app/routes/_index/route.jsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app": {
+        "id": "routes/app",
+        "parentId": "root",
+        "file": "app/routes/app.jsx",
+        "path": "app",
+        "config": {}
+      },
+      "routes/app.products._index": {
+        "id": "routes/app.products._index",
+        "parentId": "routes/app",
+        "file": "app/routes/app.products._index.jsx",
+        "path": "products",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.orders._index": {
+        "id": "routes/app.orders._index",
+        "parentId": "routes/app",
+        "file": "app/routes/app.orders._index.jsx",
+        "path": "orders",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.products.$id": {
+        "id": "routes/app.products.$id",
+        "parentId": "routes/app",
+        "file": "app/routes/app.products.$id.jsx",
+        "path": "products/:id",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.products.new": {
+        "id": "routes/app.products.new",
+        "parentId": "routes/app",
+        "file": "app/routes/app.products.new.jsx",
+        "path": "products/new",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.import-demo": {
+        "id": "routes/app.import-demo",
+        "parentId": "routes/app",
+        "file": "app/routes/app.import-demo.jsx",
+        "path": "import-demo",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.additional": {
+        "id": "routes/app.additional",
+        "parentId": "routes/app",
+        "file": "app/routes/app.additional.jsx",
+        "path": "additional",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.orders.$id": {
+        "id": "routes/app.orders.$id",
+        "parentId": "routes/app",
+        "file": "app/routes/app.orders.$id.jsx",
+        "path": "orders/:id",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.settings": {
+        "id": "routes/app.settings",
+        "parentId": "routes/app",
+        "file": "app/routes/app.settings.jsx",
+        "path": "settings",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app._index": {
+        "id": "routes/app._index",
+        "parentId": "routes/app",
+        "file": "app/routes/app._index.jsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.setup": {
+        "id": "routes/app.setup",
+        "parentId": "routes/app",
+        "file": "app/routes/app.setup.jsx",
+        "path": "setup",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/app.fees": {
+        "id": "routes/app.fees",
+        "parentId": "routes/app",
+        "file": "app/routes/app.fees.jsx",
+        "path": "fees",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "remixConfig": {
+    "appDirectory": "C:\\Users\\alimh\\Downloads\\Compressed\\theme_export__double-exposure-com-double-expo-theme-main__15SEP2025-0629am\\product-configurator\\app",
+    "basename": "/",
+    "buildDirectory": "C:\\Users\\alimh\\Downloads\\Compressed\\theme_export__double-exposure-com-double-expo-theme-main__15SEP2025-0629am\\product-configurator\\build",
+    "future": {
+      "v3_fetcherPersist": true,
+      "v3_relativeSplatPath": true,
+      "v3_throwAbortReason": true,
+      "v3_routeConfig": true,
+      "v3_singleFetch": false,
+      "v3_lazyRouteDiscovery": true,
+      "unstable_optimizeDeps": false
+    },
+    "manifest": false,
+    "publicPath": "/",
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.jsx"
+      },
+      "routes/webhooks.app.scopes_update": {
+        "id": "routes/webhooks.app.scopes_update",
+        "parentId": "root",
+        "file": "routes/webhooks.app.scopes_update.jsx",
+        "path": "webhooks/app/scopes_update"
+      },
+      "routes/api.designs.configuration": {
+        "id": "routes/api.designs.configuration",
+        "parentId": "root",
+        "file": "routes/api.designs.configuration.jsx",
+        "path": "api/designs/configuration"
+      },
+      "routes/api.products.decorations": {
+        "id": "routes/api.products.decorations",
+        "parentId": "root",
+        "file": "routes/api.products.decorations.jsx",
+        "path": "api/products/decorations"
+      },
+      "routes/webhooks.app.uninstalled": {
+        "id": "routes/webhooks.app.uninstalled",
+        "parentId": "root",
+        "file": "routes/webhooks.app.uninstalled.jsx",
+        "path": "webhooks/app/uninstalled"
+      },
+      "routes/webhooks.orders.create": {
+        "id": "routes/webhooks.orders.create",
+        "parentId": "root",
+        "file": "routes/webhooks.orders.create.jsx",
+        "path": "webhooks/orders/create"
+      },
+      "routes/api.products.variants": {
+        "id": "routes/api.products.variants",
+        "parentId": "root",
+        "file": "routes/api.products.variants.jsx",
+        "path": "api/products/variants"
+      },
+      "routes/api.customer-designs": {
+        "id": "routes/api.customer-designs",
+        "parentId": "root",
+        "file": "routes/api.customer-designs.jsx",
+        "path": "api/customer-designs"
+      },
+      "routes/api.products.details": {
+        "id": "routes/api.products.details",
+        "parentId": "root",
+        "file": "routes/api.products.details.jsx",
+        "path": "api/products/details"
+      },
+      "routes/api.products.search": {
+        "id": "routes/api.products.search",
+        "parentId": "root",
+        "file": "routes/api.products.search.jsx",
+        "path": "api/products/search"
+      },
+      "routes/api.designs.create": {
+        "id": "routes/api.designs.create",
+        "parentId": "root",
+        "file": "routes/api.designs.create.jsx",
+        "path": "api/designs/create"
+      },
+      "routes/api.designs.status": {
+        "id": "routes/api.designs.status",
+        "parentId": "root",
+        "file": "routes/api.designs.status.jsx",
+        "path": "api/designs/status"
+      },
+      "routes/api.designs.upload": {
+        "id": "routes/api.designs.upload",
+        "parentId": "root",
+        "file": "routes/api.designs.upload.jsx",
+        "path": "api/designs/upload"
+      },
+      "routes/api.files.complete": {
+        "id": "routes/api.files.complete",
+        "parentId": "root",
+        "file": "routes/api.files.complete.jsx",
+        "path": "api/files/complete"
+      },
+      "routes/api.products.sizes": {
+        "id": "routes/api.products.sizes",
+        "parentId": "root",
+        "file": "routes/api.products.sizes.jsx",
+        "path": "api/products/sizes"
+      },
+      "routes/api.designs.draft": {
+        "id": "routes/api.designs.draft",
+        "parentId": "root",
+        "file": "routes/api.designs.draft.jsx",
+        "path": "api/designs/draft"
+      },
+      "routes/api.designs.files": {
+        "id": "routes/api.designs.files",
+        "parentId": "root",
+        "file": "routes/api.designs.files.jsx",
+        "path": "api/designs/files"
+      },
+      "routes/api.products.list": {
+        "id": "routes/api.products.list",
+        "parentId": "root",
+        "file": "routes/api.products.list.jsx",
+        "path": "api/products/list"
+      },
+      "routes/api.designs.save": {
+        "id": "routes/api.designs.save",
+        "parentId": "root",
+        "file": "routes/api.designs.save.jsx",
+        "path": "api/designs/save"
+      },
+      "routes/api.files.stage": {
+        "id": "routes/api.files.stage",
+        "parentId": "root",
+        "file": "routes/api.files.stage.jsx",
+        "path": "api/files/stage"
+      },
+      "routes/apps.my-designs": {
+        "id": "routes/apps.my-designs",
+        "parentId": "root",
+        "file": "routes/apps.my-designs.jsx",
+        "path": "apps/my-designs"
+      },
+      "routes/apps.proof.$id": {
+        "id": "routes/apps.proof.$id",
+        "parentId": "root",
+        "file": "routes/apps.proof.$id.jsx",
+        "path": "apps/proof/:id"
+      },
+      "routes/designs._index": {
+        "id": "routes/designs._index",
+        "parentId": "root",
+        "file": "routes/designs._index.jsx",
+        "path": "designs",
+        "index": true
+      },
+      "routes/api.fee-maps": {
+        "id": "routes/api.fee-maps",
+        "parentId": "root",
+        "file": "routes/api.fee-maps.jsx",
+        "path": "api/fee-maps"
+      },
+      "routes/designs.$id": {
+        "id": "routes/designs.$id",
+        "parentId": "root",
+        "file": "routes/designs.$id.jsx",
+        "path": "designs/:id"
+      },
+      "routes/auth.login": {
+        "id": "routes/auth.login",
+        "parentId": "root",
+        "file": "routes/auth.login/route.jsx",
+        "path": "auth/login"
+      },
+      "routes/api.env": {
+        "id": "routes/api.env",
+        "parentId": "root",
+        "file": "routes/api.env.jsx",
+        "path": "api/env"
+      },
+      "routes/auth.$": {
+        "id": "routes/auth.$",
+        "parentId": "root",
+        "file": "routes/auth.$.jsx",
+        "path": "auth/*"
+      },
+      "routes/_index": {
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "routes/_index/route.jsx",
+        "index": true
+      },
+      "routes/app": {
+        "id": "routes/app",
+        "parentId": "root",
+        "file": "routes/app.jsx",
+        "path": "app"
+      },
+      "routes/app.products._index": {
+        "id": "routes/app.products._index",
+        "parentId": "routes/app",
+        "file": "routes/app.products._index.jsx",
+        "path": "products",
+        "index": true
+      },
+      "routes/app.orders._index": {
+        "id": "routes/app.orders._index",
+        "parentId": "routes/app",
+        "file": "routes/app.orders._index.jsx",
+        "path": "orders",
+        "index": true
+      },
+      "routes/app.products.$id": {
+        "id": "routes/app.products.$id",
+        "parentId": "routes/app",
+        "file": "routes/app.products.$id.jsx",
+        "path": "products/:id"
+      },
+      "routes/app.products.new": {
+        "id": "routes/app.products.new",
+        "parentId": "routes/app",
+        "file": "routes/app.products.new.jsx",
+        "path": "products/new"
+      },
+      "routes/app.import-demo": {
+        "id": "routes/app.import-demo",
+        "parentId": "routes/app",
+        "file": "routes/app.import-demo.jsx",
+        "path": "import-demo"
+      },
+      "routes/app.additional": {
+        "id": "routes/app.additional",
+        "parentId": "routes/app",
+        "file": "routes/app.additional.jsx",
+        "path": "additional"
+      },
+      "routes/app.orders.$id": {
+        "id": "routes/app.orders.$id",
+        "parentId": "routes/app",
+        "file": "routes/app.orders.$id.jsx",
+        "path": "orders/:id"
+      },
+      "routes/app.settings": {
+        "id": "routes/app.settings",
+        "parentId": "routes/app",
+        "file": "routes/app.settings.jsx",
+        "path": "settings"
+      },
+      "routes/app._index": {
+        "id": "routes/app._index",
+        "parentId": "routes/app",
+        "file": "routes/app._index.jsx",
+        "index": true
+      },
+      "routes/app.setup": {
+        "id": "routes/app.setup",
+        "parentId": "routes/app",
+        "file": "routes/app.setup.jsx",
+        "path": "setup"
+      },
+      "routes/app.fees": {
+        "id": "routes/app.fees",
+        "parentId": "routes/app",
+        "file": "routes/app.fees.jsx",
+        "path": "fees"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
